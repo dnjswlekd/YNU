@@ -20,14 +20,20 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px; 
-  color: #000;
-  line-height: 1.4;
-  letter-spacing: -0.64px;
+  font-family: "Noto Sans KR", "NotoSansCJKsc", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #333;
+  letter-spacing: -0.35px;
   word-break: keep-all;
 }
 .wrap {
   position: relative;
   display: block;
+}
+/* 공통요소 */
+.container {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
 }

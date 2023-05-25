@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1, user-scalable=no" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="images/favicon/site.webmanifest" />
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko" />
   <meta property="og:image" content="https://www.yu.ac.kr/_res/yu/main/img/main/img-m-emblem.png" />
@@ -27,8 +28,13 @@
     <![endif]-->
   <script src="js/prefixfree.min.js"></script>
   <script src="js/respond.min.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css" />
+
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/layout.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/banner.js"></script>
   <script src="js/header.js"></script>
@@ -44,40 +50,84 @@
 </head>
 
 <body>
-  <div class="wrap"></div>
-  <!-- 배너 -->
-  <section class="banner"></section>
-  <!--// 배너 -->
-  <!-- 상단 -->
-  <section class="header"></section>
-  <!-- //상단 -->
-  <!-- 비주얼 -->
-  <section class="visual"></section>
-  <!--// 비주얼 -->
-  <!-- 뉴스룸 -->
-  <section class="newsroom"></section>
-  <!--// 뉴스룸 -->
-  <!-- 퀵메뉴 -->
-  <section class="quickmenu"></section>
-  <!--// 퀵메뉴 -->
-  <!-- 학사안내 -->
-  <section class="schedule"></section>
-  <!--// 학사안내 -->
-  <!-- 소식 -->
-  <section class="news"></section>
-  <!--// 소식 -->
-  <!-- 스토리 -->
-  <section class="story"></section>
-  <!--// 스토리 -->
-  <!-- 프라이드 -->
-  <section class="pride"></section>
-  <!--// 프라이드 -->
-  <!-- 소개 -->
-  <section class="introduction"></section>
-  <!--// 소개 -->
-  <!-- 하단 -->
-  <section class="footer"></section>
-  <!--// 하단 -->
+  <div class="wrap">
+    <!-- 배너 -->
+    <section class="banner">
+      <div class="banner-slide">
+        <div class="swiper sw-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#">내용1</a></div>
+            <div class="swiper-slide"><a href="#">내용2</a></div>
+            <div class="swiper-slide"><a href="#">내용3</a></div>
+            <div class="swiper-slide"><a href="#">내용4</a></div>
+            <div class="swiper-slide"><a href="#">내용5</a></div>
+            <div class="swiper-slide"><a href="#">내용6</a></div>
+            <div class="swiper-slide"><a href="#">내용7</a></div>
+            <div class="swiper-slide"><a href="#">내용8</a></div>
+            <div class="swiper-slide"><a href="#">내용9</a></div>
+          </div>
+        </div>
+        <button class="sw-banner-prev">이전</button>
+        <button class="sw-banner-next">다음</button>
+        <div class="sw-banner-control">
+          <div class="sw-banner-pg"></div>
+        </div>
+        <!-- 닫기/열기 -->
+        <button class="banner-bt">버튼</button>
+      </div>
+    </section>
+    <!--// 배너 -->
+    <!-- 상단 -->
+    <header class="header">
+      <div class="container"></div>
+    </header>
+    <!--// 상단 -->
+    <!-- 비주얼 -->
+    <section class="visual">
+      <div class="container"></div>
+    </section>
+    <!--// 비주얼 -->
+    <!-- 뉴스룸   -->
+    <section class="newsroom">
+      <div class="container"></div>
+    </section>
+    <!--// 뉴스룸   -->
+    <!-- 퀵메뉴 -->
+    <section class="quickmenu">
+      <div class="container"></div>
+    </section>
+    <!--// 퀵메뉴 -->
+    <!-- 학사안내 -->
+    <section class="schedule">
+      <div class="container"></div>
+    </section>
+    <!--// 학사안내 -->
+    <!-- 소식  -->
+    <section class="news">
+      <div class="container"></div>
+    </section>
+    <!--// 소식  -->
+    <!-- 스토리 -->
+    <section class="story">
+      <div class="container"></div>
+    </section>
+    <!--// 스토리 -->
+    <!-- 프라이드 -->
+    <section class="pride">
+      <div class="container"></div>
+    </section>
+    <!--// 프라이드 -->
+    <!-- 소개 -->
+    <section class="introduction">
+      <div class="container"></div>
+    </section>
+    <!--// 소개 -->
+    <!-- 하단  -->
+    <footer class="footer">
+      <div class="container"></div>
+    </footer>
+    <!--// 하단  -->
+  </div>
 </body>
 
 </html>
